@@ -70,20 +70,21 @@ let btn=document.getElementById('usun');
 
 btn.addEventListener('click',function(e){
     e.preventDefault();
-    if (document.getElementById('usun').value !== null) {
+    if (document.getElementById('todoSearch').value!== "") {
     let p=document.getElementById('list');
     let c=p.childNodes;
     console.log(c);
     for(i=1; i<c.length; i++){
     console.log(c[i]);
     if(c[i].style.display!=="none"){
-    let p=c[i].innerText;
+    let p=c[i].textContent;
     localStorage.removeItem(p);
     c[i].remove();
-    document.getElementById('usun').value=null;
+    document.getElementById('todoSearch').value="";
     }
     }
     }
+    else return null;
     
 })
 window.addEventListener('load',function(e){
