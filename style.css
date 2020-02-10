@@ -1,0 +1,78 @@
+body{
+    box-sizing: border-box;
+    background-color: #fbfbfb;
+}
+.todo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  
+}
+.pudelko{
+    position: absolute;
+    left: 20%;
+    height: 60%;
+    width: 60%;
+    font-family: sans-serif;
+}
+#zadanie{
+    padding: 1rem;
+    height: 10rem;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+    resize: vertical;
+    font-family:sans-serif;
+}
+#dowyslania 
+{
+border:0;
+border-radius: 0.2rem;
+cursor: pointer;
+height: auto;
+padding: 0.8rem 1.6rem;
+font-weight: bold;
+color: rgb(86, 91, 99);
+transition: ease-in-out 0.5s;
+}
+.todo-list-cnt {
+    
+    background: #fff;
+    font-family:sans-serif;
+    margin:1rem 0;
+    border:1px solid #ddd;
+    padding:1rem 2rem;
+}
+.todo-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-list-search-form {
+    width:50%;
+}
+.todo-list-search {
+    border:1px solid #ddd;
+    padding:0.5rem;
+    width: 100%;
+}
+.todo-list-title {
+    margin-top:0;
+    margin-bottom:0;
+    font-size:1rem;
+    text-transform: uppercase;
+}
+li:hover{
+    cursor: pointer;
+}
+li{
+    margin-bottom: 3%;
+    border-bottom: 1px solid black;
+}
+#usun{
+    margin-left: 5px;
+    color: rgb(86, 91, 99);    
+    border-radius: 0.2rem;
+    font-weight: bold;
+
+}

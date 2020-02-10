@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="todo">
+    <form class="pudelko">
+        <div id="dododania">
+        <label for="zadanie" id="podajzadanie">Podaj zadanie</label>
+        <textarea id="zadanie" name="zad"></textarea>
+        </div>
+        <div id="dodzad">
+            <button type="submit" id="dowyslania">Dodaj zadanie</button>
+        </div>
+        <section class="todo-list-cnt">
+            <header class="todo-list-header">
+                <h2 class="todo-list-title">
+                    Lista zadań
+                </h2>
+                <form class="todo-list-search-form">
+                    <input type="search" id="todoSearch" class="todo-list-search">
+                    <button id="usun">Usun</button>
+                </form>
+            </header>
+            <div class="todo-list" id="todoList">
+                <ul id='list'>
+
+                </ul>
+            </div>
+        </section>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
