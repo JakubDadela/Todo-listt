@@ -81,11 +81,26 @@ btn.addEventListener('click',function(e){
     localStorage.removeItem(p);
     c[i].remove();
     document.getElementById('todoSearch').value="";
+  
     }
     }
     }
-    else return null;
-    
+    else{
+        let w=document.getElementById('list');
+        let p=w.firstChild;
+        let txt=p.textContent;
+        localStorage.removeItem(txt);
+        p.remove();
+
+    };
+    let p=document.getElementById('list');
+    if (document.getElementById('todoSearch').value== ""){
+    let c=p.childNodes;
+    console.log(c);
+    for(i=1; i<c.length; i++){
+        c[i].style.setProperty("display","");
+    }
+}
 })
 window.addEventListener('load',function(e){
     e.preventDefault();
